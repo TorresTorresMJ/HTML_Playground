@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Rubik cube with the colors mixed">
+        <figcaption>Rubik cube</figcaption>
+        </figure>
+    </section>    
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+            <label for="card-name" id="card-name">Cardholder name</label>
+            <input 
+            id="card-name" 
+            name="card-name"
+            type="text"
+            size="40"
+            required aria-required="true"
+        aria-labelledby="cardholder_name">
+            <label for="card-number" id="card-number">Card number</label>
+            <input 
+            id="card-number" 
+            name="card-number"
+            type="number"
+            min="0"
+            required aria-required="true"
+            aria-labelledby="card_number"
+            />
+            <label for="month" name="month">Expiration month</label>
+            <input
+            id="month"
+            name="month"
+            type="number"
+            min="1"
+            max="12"
+            placeholder="mm"
+            maxlenght="2"
+            size="2"
+            required aria-required="true"
+        aria-labelledby="expiration_month"
+            />
+            <label for="year" name="year">Expiration year</label>
+            <input
+            id="year" 
+            name="year"
+            type="number"
+            min="25"
+            max="40"
+            maxlenght="2"
+            placeholder="yy"
+            size="2"
+            aria-required="true"
+            aria-labelledby="expiration_year"
+            />
+            <label for="cvv" name="cvv">cvv</label>
+            <input
+            id="cvv"
+            name="cvv"
+            inputype="number"
+            maxlenght="3"
+            minlenght="3"
+            min="0"
+           size="3"
+           aria-required="true"
+           aria-labelledby="cvv_number"
+            />
+     </form>
+    </section>
+    <button type="submit" id="submit">Confirm</button>
+    
+</body>
+
+</html>
